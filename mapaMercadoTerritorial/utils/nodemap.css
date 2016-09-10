@@ -1,0 +1,40 @@
+
+/* Para una resolucion base de 1360*768 no fullscreen*/
+div.mapnode{
+	width: 100%; 
+	height: 700px;
+}
+
+@media(max-height: 800px) {
+	div.mapnode{
+		height: 700px;
+	}
+	
+}
+
+@media (max-height: 768px) {
+	div.mapnode{
+		height: 640px;
+	}	
+}
+
+@media max-height: 600px) {
+	div.mapnode{
+		height: 525px;
+	}
+	
+}
+
+@media max-height: 450px) {
+	div.mapnode{
+		height: 400px;
+	}
+	
+}
+
+@media (max-height: 400px){
+	div.mapnode{
+		height: 350px;
+	}
+}
+
