@@ -16,6 +16,8 @@
 	<div id="map" class= "mapnode"></div>
 	<script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
 	<script src="data/points_arg.js"></script>
+	<script src="data/cabaPoints.js"></script>
+	<script src="utils/plugins/geocoderJS/geocoder.js"></script>
 	<script src="utils/leafUtils.js"></script>
 	<script src="utils/plugins/sidebarv1/L.Control.Sidebar.js"></script>
 	<script src="utils/plugins/search/leaflet-search.js"></script>
@@ -47,6 +49,12 @@
 			singleMarkerMode: true,
 			iconCreateFunction: clusterIconCreate()					
 		}); 
+		
+		var markerscapwinfo = L.markerClusterGroup({
+			singleMarkerMode: true,
+			iconCreateFunction: clusterIconCreate()					
+		}); 
+		puntoscapwinfo = importGeoJsonFilter(cabapoints,filtrarNinguno());
 		puntoscap = importGeoJsonFilter(points,filtrarCapital());
 		puntosbsas = importGeoJsonFilter(points,filtrarBuenosAires());
 		todoslospuntos = importGeoJsonFilter(points,filtrarNinguno());
@@ -54,6 +62,7 @@
 		markerscap.addLayer(puntoscap); 
 		markersbsas.addLayer(puntosbsas);
 		markers.addLayer(todoslospuntos);
+		markerscapwinfo.addLayer(puntoscapwinfo);
 		//se agrega 1 grupo inicial al mapa para mostrar
 		mapa.addLayer(markers);
 		//ajusta la vista al maxZoom relativo a los bordes
@@ -63,6 +72,7 @@
 			    "Todos": markers,
 			    "Prov. Buenos Aires": markersbsas,
 			    "Capital Federal": markerscap,
+			    "Capital Federal Con info": markerscapwinfo
 			};
 		var control = L.control.layers(markerSelector).addTo(mapa);	
 		
@@ -77,6 +87,7 @@
 													hideMarkerOnCollapse:true}) 
 												
 		mapa.addControl(buscadorDeNodos);
+		//geocodingOSM(rawpoints);
 	</script>
 
 </body>

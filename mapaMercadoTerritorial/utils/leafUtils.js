@@ -6,29 +6,71 @@ var mapboxaccesstoken = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?ac
 var attributionInfo = 'EL zoom de este mapa está limitado para respetar la privacidad de los nodos &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, '
 	+ '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, '
 	+ 'Imagery © <a href="http://mapbox.com">Mapbox</a>';
-var nombreNodo = "Nombre del nodo";
 var direccionContacto = "./data/MockUpContacto/index.html";
 var controlSidebar
 
 /*---------------------
  definicion de iconos propios y metodos experimentales
  ----------------------*/
-function popupStructure(nameNode){
+function popupStructure(nameNode, phone, email){
 	
 	var popupBase = 
-	'<div align="center">' + "Información" +'</div>' +
+	/*'<div align="center">' + "Información" +'</div>' +*/
 	'<div>'+
-		'<h1 align="center">'+nameNode+'</h1>'+
-			'<div>'+
-				'Cuerpo con la información que se debe mostrar'+
-				'</div>'+
+		'<h3 align="center">'+nameNode+'</h3>'+
+			/*'<div>'+'</div>'+*/
 		'<div id="contact">'+
-			'<br/>'+
-			'<button onclick="openCloseSidebar();">Contacto</button>'+
+			/*'<br/>'+*/
+			'<div align="center"> Información de contacto </div>'+
+			/*'<br/>'+*/
+			/*'<div align="center">'+'Telefono:'+ phone + '</div>'+
+			'<div align="center">'+ 'Email:' + email + '</div>'+*/
+			showInfo(email,phone);	
 		'</div>'+
 	'</div>';
 	
 	return popupBase;
+}
+
+function showInfo(email,phone){
+	var string = "";
+	if(phone != 'ND'){
+		string = string + '<div align="center"> <img src="../data/icons/phone.png" height="42" width="42"> '+'Telefono:'+ phone + '</div>';
+	}
+	
+	if(email != 'ND'){
+		string = string + '<div align="center"> <img src="../data/icons/mailicon.png" height="42" width="42">'+ 'Email:' + email + '</div>';
+	}
+	
+	return string
+}
+
+function printOnConsole(feature,lat,lng,info){
+	console.log(feature.properties.nombreNodo+';'+feature.properties.coordinador+';'+feature.properties.email+';'+feature.properties.tipoNodo+';'+feature.properties.direccionOSM+';'+feature.properties.telefonoPrincipal+';'+lat.toString()+';'+lng.toString()+';'+info+';');
+}
+
+function gcoder(coder,feature){
+	coder.geocode(feature.properties.direccionOSM, function(result) {
+	      var rlength = result.length;
+	      var lat = result[0].getLatitude();
+	      var lng = result[0].getLongitude();
+	      if(rlength == 1){
+	    	  printOnConsole(feature,lat,lng,'buena presicion')
+	      }	      
+	      if(rlength > 1){
+	    	  printOnConsole(feature,lat,lng,'mala presicion')
+	      }
+	});
+}
+
+function geocodingOSM(dataGeoJson){
+	var points = L.geoJson(dataGeoJson, {
+		onEachFeature : function(feature, layer)
+		{
+			var openStreetMapGeocoder = GeocoderJS.createGeocoder('openstreetmap');
+				gcoder(openStreetMapGeocoder,feature);
+		}
+	});    
 }
 
 //recarga la pagina del menu desplegrable lateral
@@ -204,8 +246,11 @@ function importGeoJsonFilter(dataGeoJson, aFilterFunction){
 		onEachFeature : function(feature, layer)
 		{
 			var popdata
-			if (feature.properties && feature.properties.name){
-					popdata = popupStructure(feature.properties.name);
+			if (feature.properties && feature.properties.nombreNodo && feature.properties.telefono&&feature.properties.email){
+					popdata = popupStructure(feature.properties.nombreNodo,feature.properties.telefono,feature.properties.email);
+					layer.bindPopup(popdata);
+				}else{
+					popdata = popupStructure(feature.properties.name,'ND','ND');
 					layer.bindPopup(popdata);
 				}
 		},
