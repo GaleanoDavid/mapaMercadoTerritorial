@@ -17,11 +17,11 @@ function popupStructure(nameNode, phone, email){
 	var popupBase = 
 	/*'<div align="center">' + "Información" +'</div>' +*/
 	'<div>'+
-		'<h3 align="center">'+nameNode+'</h3>'+
+		'<h2 align="center">'+nameNode+'</h2>'+
 			/*'<div>'+'</div>'+*/
 		'<div id="contact">'+
 			/*'<br/>'+*/
-			'<div align="center"> Información de contacto </div>'+
+			/*'<div align="center"> Información de contacto </div>'+*/
 			/*'<br/>'+*/
 			/*'<div align="center">'+'Telefono:'+ phone + '</div>'+
 			'<div align="center">'+ 'Email:' + email + '</div>'+*/
@@ -34,12 +34,16 @@ function popupStructure(nameNode, phone, email){
 
 function showInfo(email,phone){
 	var string = "";
+
+	/*if(email != 'ND' || phone != 'ND'){
+		string = string + '<div align="center"> <font size="3.5"> Información de contacto </font> </div>';
+	}*/
 	if(phone != 'ND'){
-		string = string + '<div align="center"> <img src="../data/icons/phone.png" height="42" width="42"> '+'Telefono:'+ phone + '</div>';
+		string = string + '<div align="center"> <img src="./data/icons/phone.png" height="16" width="16"> <font size="3">'+ phone +'</font></div>';
 	}
 	
 	if(email != 'ND'){
-		string = string + '<div align="center"> <img src="../data/icons/mailicon.png" height="42" width="42">'+ 'Email:' + email + '</div>';
+		string = string + '<div align="center"> <img src="./data/icons/mailicon.png" height="16" width="16"> <font size="3">'+ email +'</font></div>';
 	}
 	
 	return string
@@ -121,6 +125,14 @@ function clusterIconCreate() {
 
 //Metodos de filtrado para el geoJeson
 //lo usa la opcion Filter:
+function filtrarNodosAbiertos(){
+	return (
+			function(feature, layer) {
+				return (feature.properties.tipoNodo).indexOf("abierto")>0;
+			}
+	)
+}
+
 function filtrarCapital(){
 	return (
 			function(feature, layer) {

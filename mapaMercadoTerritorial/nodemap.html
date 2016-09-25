@@ -22,23 +22,18 @@
 	<script src="utils/plugins/sidebarv1/L.Control.Sidebar.js"></script>
 	<script src="utils/plugins/search/leaflet-search.js"></script>
 	<script src="utils/plugins/markercluster/leaflet.markercluster-src.js"></script>
-	<div id="sidebar">
+	<!--<div id="sidebar">
     	<h1 align="center">Contacto</h1>
     	    <object type="text/html" data="./data/MockUpContacto/index.html"
             	style="width:100%; height:75%; margin:0%;">
     		</object>
-	</div>
+	</div>-->
 	
 	<script>
 	
 		var cy = -59.52;
 		var cx = -34.384;
 		var mapa = initmap('map', cx, cy, 4, 13);
-		
-		var markerscap = L.markerClusterGroup({
-			singleMarkerMode: true,
-			iconCreateFunction: clusterIconCreate()					
-		});
 		
 		var markers = L.markerClusterGroup({
 			singleMarkerMode: true,
@@ -53,16 +48,22 @@
 		var markerscapwinfo = L.markerClusterGroup({
 			singleMarkerMode: true,
 			iconCreateFunction: clusterIconCreate()					
-		}); 
+		});
+		
+		var markersCapNabiertos = L.markerClusterGroup({
+			singleMarkerMode: true,
+			iconCreateFunction: clusterIconCreate()					
+		});
+		//se cargan los puntos
+		puntoscapAbiertos = importGeoJsonFilter(cabapoints, filtrarNodosAbiertos());
 		puntoscapwinfo = importGeoJsonFilter(cabapoints,filtrarNinguno());
-		puntoscap = importGeoJsonFilter(points,filtrarCapital());
 		puntosbsas = importGeoJsonFilter(points,filtrarBuenosAires());
 		todoslospuntos = importGeoJsonFilter(points,filtrarNinguno());
 		//Se agregan los puntos a cada grupo de cluster
-		markerscap.addLayer(puntoscap); 
 		markersbsas.addLayer(puntosbsas);
 		markers.addLayer(todoslospuntos);
 		markerscapwinfo.addLayer(puntoscapwinfo);
+		markersCapNabiertos.addLayer(puntoscapAbiertos);
 		//se agrega 1 grupo inicial al mapa para mostrar
 		mapa.addLayer(markers);
 		//ajusta la vista al maxZoom relativo a los bordes
@@ -71,13 +72,13 @@
 		var markerSelector = {
 			    "Todos": markers,
 			    "Prov. Buenos Aires": markersbsas,
-			    "Capital Federal": markerscap,
-			    "Capital Federal Con info": markerscapwinfo
+			    "Capital Federal": markerscapwinfo,
+			    "Capital Federal (solo abiertos)": markersCapNabiertos
 			};
 		var control = L.control.layers(markerSelector).addTo(mapa);	
 		
 		//inicializa el menu lateral
-		addSidebar(mapa,'sidebar');
+		//addSidebar(mapa,'sidebar');
 		
 		//bajo prueba
 		//agrega una busqueda basada en los markers dados.

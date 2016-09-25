@@ -74,7 +74,7 @@ var cabapoints=[
 	    },
 	    "properties": {
 	    "nombreNodo":"Nuevo encuentro vicente lopez",
-	    "coordinador":"Andres.",
+	    "coordinador":"Andres",
 	    "email":"verduras.nevilo@gmail.com",
 	    "tipoNodo":"",
 	    "direccionOSM":"Caseros 222,Ciudad Autonoma de Buenos Aires, Argentina",
@@ -330,7 +330,7 @@ var cabapoints=[
 	    },
 	    "properties": {
 	    "nombreNodo":"Andrea Vera",
-	    "coordinador":"Andrea Paola Vera. ",
+	    "coordinador":"Andrea Paola Vera",
 	    "email":"apaolavera@gmail.com",
 	    "tipoNodo":"",
 	    "direccionOSM":"joaquin v Gonzalez 2363, Ciudad Autonoma de Buenos Aires, Argentina",
@@ -382,7 +382,7 @@ var cabapoints=[
 	    "email":"rincondelsilencio@gmail.com",
 	    "tipoNodo":"nodo abierto",
 	    "direccionOSM":"Caseros 505 , Ciudad Autonoma de Buenos Aires, Argentina",
-	    "telefono":"15-4407-7940",
+	    "telefono":"15-44077940",
 	    "precision":"mala "
 	    }
 	  },
@@ -745,7 +745,7 @@ var cabapoints=[
 	       "coordinates":  [ -58.5003413244898,-34.5843610734694 ]
 	    },
 	    "properties": {
-	    "nombreNodo":"Maria Fernanda ",
+	    "nombreNodo":"Maria Fernanda",
 	    "coordinador":"Maria Fernanda",
 	    "email":"fermadrynn@yahoo.com.ar",
 	    "tipoNodo":"",
@@ -841,7 +841,7 @@ var cabapoints=[
 	       "coordinates":  [ -58.4427602897959,-34.6304742346939 ]
 	    },
 	    "properties": {
-	    "nombreNodo":"Parque Chacabuco.",
+	    "nombreNodo":"Parque Chacabuco",
 	    "coordinador":"Federico Gobato",
 	    "email":"fgobato@gmail.com",
 	    "tipoNodo":"",
@@ -974,7 +974,7 @@ var cabapoints=[
 	    "email":"amaliasav@hotmail.com",
 	    "tipoNodo":"nodo abierto",
 	    "direccionOSM":"Luis saenz Pena 1195,Ciudad Autonoma de Buenos Aires, Argentina",
-	    "telefono":"1568853683",
+	    "telefono":"15-68853683",
 	    "precision":"mala "
 	    }
 	  },
