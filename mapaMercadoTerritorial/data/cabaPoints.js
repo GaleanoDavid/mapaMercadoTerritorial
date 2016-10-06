@@ -15,7 +15,7 @@ var cabapoints=[
 	    "tipoNodo":"",
 	    "direccionOSM":"estados unidos  2957,Ciudad Autonoma de Buenos Aires, Argentina",
 	    "telefono":"ND",
-	    "precision":"buena"
+	    "precision":" buena"
 	    }
 	  },
 	  {
