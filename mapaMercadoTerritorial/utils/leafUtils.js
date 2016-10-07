@@ -248,6 +248,102 @@ function addPolygon(coordsList, mapa, texto) {
 	L.polygon(coordsList).addTo(mapa).bindPopup(texto);
 }
 
+var HttpClient = function() {
+    this.get = function(aUrl, aCallback) {
+        var anHttpRequest = new XMLHttpRequest();
+        anHttpRequest.onreadystatechange = function() { 
+            if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+            	aCallback(anHttpRequest.responseText);
+            }
+
+        anHttpRequest.open( "GET", aUrl, true );            
+        anHttpRequest.send( null );
+    }
+}
+
+function simpleQuery(query){
+	encodedQuery=encodeURI(query)
+	aQuery = new HttpClient();
+	aQuery.get('http://overpass-api.de/api/interpreter?data='+encodedQuery, function(response) {
+	    console.log(response);
+	    var json= JSON.parse(response);
+	    GeoJSON.parse(json, {Point: ['lat', 'lng']}, function(geojson){
+	    	  console.log(JSON.stringify(geojson));
+	    	});
+	});
+}
+
+//Partido, calle principal, calle secundaria, calle secundaria 2.
+function queryForOverpasQL(area,mainStreet,optStreet1,optStreet2){
+	var query =		
+'[out:json];'+		
+'area["name"="'+area+'"]->.boundaryofquilmes;'+
+'('+
+'way(area.boundaryofquilmes)["name"="'+mainStreet+'"];>;'+
+'rel(area.boundaryofquilmes)["name"="'+mainStreet+'"];>;'+
+')->.mainStreet;'+
+'('+
+'way(area.boundaryofquilmes)["name"="'+optStreet1+'"];>;'+
+'rel(area.boundaryofquilmes)["name"="'+optStreet1+'"];>;'+
+') ->.optStreetone;'+
+'('+
+'way(area.boundaryofquilmes)["name"="'+optStreet2+'"];>;'+
+'rel(area.boundaryofquilmes)["name"="'+optStreet2+'"];>;'+
+') ->.optStreettwo;'+
+'('+
+'node.mainStreet.optStreetone;>;'+
+'node.mainStreet.optStreettwo'+
+')->.result;'+
+'.result out meta;';
+	
+	return query;
+}
+
+function queryForOverpasQL(area,mainStreet,optStreet1){
+	var query =		
+'[out:json];'+		
+'area["name"="'+area+'"]->.boundaryofquilmes;'+
+'('+
+'way(area.boundaryofquilmes)["name"="'+mainStreet+'"];>;'+
+'rel(area.boundaryofquilmes)["name"="'+mainStreet+'"];>;'+
+')->.mainStreet;'+
+'('+
+'way(area.boundaryofquilmes)["name"="'+optStreet1+'"];>;'+
+'rel(area.boundaryofquilmes)["name"="'+optStreet1+'"];>;'+
+') ->.optStreetone;'+
+'('+
+'node.mainStreet.optStreetone;'+
+')->.result;'+
+'.result out meta;';
+	
+	return query;
+}
+
+function exampleQueryOverpass(){
+	var query =		
+'[out:json];'+		
+'area["name"="Quilmes"]->.boundaryofquilmes;'+
+'('+
+'way(area.boundaryofquilmes)["name"="Balcarce"];>;'+
+'rel(area.boundaryofquilmes)["name"="Balcarce"];>;'+
+')->.balcarce;'+
+'('+
+'way(area.boundaryofquilmes)["name"="Moreno"];>;'+
+'rel(area.boundaryofquilmes)["name"="Moreno"];>;'+
+') ->.moreno;'+
+'('+
+'way(area.boundaryofquilmes)["name"="José de San Martin"];>;'+
+'rel(area.boundaryofquilmes)["name"="José de San Martin"];>;'+
+') ->.sanMartin;'+
+'('+
+'node.balcarce.moreno;>;'+
+'node.balcarce.sanMartin'+
+')->.rest;'+
+'.rest out meta;';
+	
+	return query;
+}
+
 /*------------------------------------
  requiere que exista una variable points en formato geojson
  TODO: generalizar!

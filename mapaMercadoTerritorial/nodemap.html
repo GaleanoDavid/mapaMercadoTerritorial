@@ -22,6 +22,7 @@
 	<script src="utils/plugins/sidebarv1/L.Control.Sidebar.js"></script>
 	<script src="utils/plugins/search/leaflet-search.js"></script>
 	<script src="utils/plugins/markercluster/leaflet.markercluster-src.js"></script>
+	<script src="utils/plugins/geoJsonParser/geojson.js"></script>
 	<!--<div id="sidebar">
     	<h1 align="center">Contacto</h1>
     	    <object type="text/html" data="./data/MockUpContacto/index.html"
@@ -30,7 +31,6 @@
 	</div>-->
 	
 	<script>
-	
 		var cy = -59.52;
 		var cx = -34.384;
 		var mapa = initmap('map', cx, cy, 4, 13);
@@ -89,6 +89,7 @@
 												
 		mapa.addControl(buscadorDeNodos);
 		//geocodingOSM(rawpoints);
+		//simpleQuery(queryForOverpasQL("Quilmes","Balcarce","Moreno",""));
 	</script>
 
 </body>
