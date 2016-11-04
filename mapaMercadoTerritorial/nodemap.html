@@ -1,96 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mapa Mercado Mercado Territorial</title>
 <meta charset="utf-8" />
-<link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css" />
-<link rel="stylesheet" href="utils/plugins/markercluster/MarkerCluster.css" />
-<link rel="stylesheet" href="utils/plugins/markercluster/MarkerCluster.Default.css" />
-<link rel="stylesheet" href="utils/plugins/usermarker/leaflet.usermarker.css" />
-<link rel="stylesheet" href="utils/plugins/sidebarv1/L.Control.Sidebar.css" />
-<link rel="stylesheet" href="utils/plugins/search/leaflet-search.css" />
-<link rel="stylesheet" href="utils/nodemap.css" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css" />
+		<link rel="stylesheet" href="utils/plugins/markercluster/MarkerCluster.css" />
+		<link rel="stylesheet" href="utils/plugins/markercluster/MarkerCluster.Default.css" />
+		<link rel="stylesheet" href="utils/plugins/usermarker/leaflet.usermarker.css" />
+		<link rel="stylesheet" href="utils/nodemap.css" />
 
 </head>
 <body class= content>
 	<div id="map" class= "mapnode"></div>
-	<script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
-	<script src="data/points_arg.js"></script>
-	<script src="data/cabaPoints.js"></script>
-	<script src="utils/plugins/geocoderJS/geocoder.js"></script>
-	<script src="utils/leafUtils.js"></script>
-	<script src="utils/plugins/sidebarv1/L.Control.Sidebar.js"></script>
-	<script src="utils/plugins/search/leaflet-search.js"></script>
-	<script src="utils/plugins/markercluster/leaflet.markercluster-src.js"></script>
-	<script src="utils/plugins/geoJsonParser/geojson.js"></script>
-	<!--<div id="sidebar">
-    	<h1 align="center">Contacto</h1>
-    	    <object type="text/html" data="./data/MockUpContacto/index.html"
-            	style="width:100%; height:75%; margin:0%;">
-    		</object>
-	</div>-->
+		<script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
+		<script src="data/points.js"></script>
+		<script src="data/pointscapraw.js"></script>
+		<script src="utils/plugins/geocoderJS/geocoder.js"></script>
+		<script src="utils/plugins/geoJsonParser/geojson.js"></script>	
+		<script src="utils/leafUtils.js"></script>
+		<script src="utils/experimentalGeocoder.js"></script>
+		<script src="utils/simpleGeoCoder.js"></script>
+		<script src="utils/mapLoader.js"></script>
+		<script src="utils/plugins/markercluster/leaflet.markercluster-src.js"></script>
 	
-	<script>
-		var cy = -59.52;
-		var cx = -34.384;
-		var mapa = initmap('map', cx, cy, 4, 13);
-		
-		var markers = L.markerClusterGroup({
-			singleMarkerMode: true,
-			iconCreateFunction: clusterIconCreate()					
-		});
-		
-		var markersbsas = L.markerClusterGroup({
-			singleMarkerMode: true,
-			iconCreateFunction: clusterIconCreate()					
-		}); 
-		
-		var markerscapwinfo = L.markerClusterGroup({
-			singleMarkerMode: true,
-			iconCreateFunction: clusterIconCreate()					
-		});
-		
-		var markersCapNabiertos = L.markerClusterGroup({
-			singleMarkerMode: true,
-			iconCreateFunction: clusterIconCreate()					
-		});
-		//se cargan los puntos
-		puntoscapAbiertos = importGeoJsonFilter(cabapoints, filtrarNodosAbiertos());
-		puntoscapwinfo = importGeoJsonFilter(cabapoints,filtrarNinguno());
-		puntosbsas = importGeoJsonFilter(points,filtrarBuenosAires());
-		todoslospuntos = importGeoJsonFilter(points,filtrarNinguno());
-		//Se agregan los puntos a cada grupo de cluster
-		markersbsas.addLayer(puntosbsas);
-		markers.addLayer(todoslospuntos);
-		markerscapwinfo.addLayer(puntoscapwinfo);
-		markersCapNabiertos.addLayer(puntoscapAbiertos);
-		//se agrega 1 grupo inicial al mapa para mostrar
-		mapa.addLayer(markers);
-		//ajusta la vista al maxZoom relativo a los bordes
-		mapa.fitBounds(markers.getBounds());
-		//control de layers
-		var markerSelector = {
-			    "Todos": markers,
-			    "Prov. Buenos Aires": markersbsas,
-			    "Capital Federal": markerscapwinfo,
-			    "Capital Federal (solo abiertos)": markersCapNabiertos
-			};
-		var control = L.control.layers(markerSelector).addTo(mapa);	
-		
-		//inicializa el menu lateral
-		//addSidebar(mapa,'sidebar');
-		
-		//bajo prueba
-		//agrega una busqueda basada en los markers dados.
-		var buscadorDeNodos = new L.Control.Search({layer: markers,
-													propertyName:'name', 
-													zoom:13,
-													hideMarkerOnCollapse:true}) 
-												
-		mapa.addControl(buscadorDeNodos);
-		//geocodingOSM(rawpoints);
-		//simpleQuery(queryForOverpasQL("Quilmes","Balcarce","Moreno",""));
-	</script>
-
+		<script>
+		startMap('map');
+		</script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-var cabapoints=[
+var points=[
 {
 	   "type": "FeatureCollection",
 	   "features": [
@@ -544,22 +544,6 @@ var cabapoints=[
 	    "direccionOSM":"Viena 6531, Ciudad Autonoma de Buenos  Aires, Argentina",
 	    "telefono":"15-40385817",
 	    "precision":"buena"
-	    }
-	  },
-	  {
-	    "type": "Feature",
-	    "geometry": {
-	       "type": "Point",
-	       "coordinates":  [ -59.0870591870267,-34.5583065 ]
-	    },
-	    "properties": {
-	    "nombreNodo":"Florida Oeste",
-	    "coordinador":"Ines Rosa",
-	    "email":"ddeelliiros@hotmail.com",
-	    "tipoNodo":"",
-	    "direccionOSM":"Ameghino 1550, Ciudad Autonoma de Buenos  Aires, Argentina",
-	    "telefono":"ND",
-	    "precision":"mala "
 	    }
 	  },
 	  {
@@ -1185,7 +1169,999 @@ var cabapoints=[
 	    "telefono":"15-50692858",
 	    "precision":"mala "
 	    }
-	  }
+	  },
+	  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3081983387755,-34.6915780265306 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Andres Amado",
+		    "coordinador":"Andr�s",
+		    "email":"andres_5922@yahoo.com.ar",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Paramaribo 5922, Wilde, Buenos Aires, Argentina",
+		    "telefono":"1533033143",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.265404,-34.7419054 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Alicia Quilmes",
+		    "coordinador":"Alicia Perez",
+		    "email":"miamiga2008@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Blas Parera 930, Quilmes, Buenos Aires, Argentina",
+		    "telefono":"1567820896",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3884407,-34.703732 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"ap287",
+		    "coordinador":"Ana Pallotta",
+		    "email":"anapallotta.ap2@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Vicente Damonte 287, Lanus, Buenos Aires, Argentina",
+		    "telefono":"20556329",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2331511,-34.7252266 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Ale Barrios",
+		    "coordinador":"Ale Karina Barrios",
+		    "email":"alkabarrios@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Balcarce 74, Quilmes, Buenos Aires, Argentina",
+		    "telefono":"1541585850",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3860345,-34.7960856 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Asociacion Ajeu",
+		    "coordinador":"Graciela Ceruso",
+		    "email":"gretec14@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Bynnon 20, Adrogue, Buenos Aires, Argentina",
+		    "telefono":"1558344262",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3646017,-34.6736021 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Avellaneda",
+		    "coordinador":"flavia Montes",
+		    "email":"flavimon@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Carlos Seminario 1341, Avellaneda, Buenos Aires, Argentina",
+		    "telefono":"1567137018",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3632086081633,-34.6642365979592 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Avellaneda Gabriela",
+		    "coordinador":"Gabriela Zolotnik 1564643828",
+		    "email":"gabrielazolotnik@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"9 de Julio 51, Avellaneda, Buenos Aires, Argentina",
+		    "telefono":"1125113597",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2116603,-34.7632676 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Berazategui",
+		    "coordinador":"Ver�nica",
+		    "email":"vayoppi@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Calle 304, Berazategui, Buenos Aires, Argentina",
+		    "telefono":"1532969316",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2632347,-34.7086673 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Bernal Av Caseros",
+		    "coordinador":"Patricia Fridman",
+		    "email":"patriciafridman@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Av. Caseros, Quilmes, Buenos Aires, Argentina",
+		    "telefono":"1551760320",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.4419704,-34.7679422 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Blasia Barreto Lomas",
+		    "coordinador":"Blasia Barreto",
+		    "email":"blasia0302@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Guarani 20, Lomas de Zamora, Buenos Aires, Argentina",
+		    "telefono":"1561123419",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2491643,-34.7244085 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Brandsen Alicia",
+		    "coordinador":"Alicia Romero",
+		    "email":"aliciasromero@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Brandsen 133, Quilmes, Buenos Aires, Argentina",
+		    "telefono":"42540796",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3708435,-34.8377107 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Burzaco ",
+		    "coordinador":"Wanda Olivares ",
+		    "email":"wandaolivares@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Morganti 250, Burzaco, Buenos Aires, Argentina",
+		    "telefono":"1537885854",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.296484,-34.7295976 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Casa Lito",
+		    "coordinador":"Erika Rivas",
+		    "email":"erivas@casalito.com.ar",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Unamuno 1633,Quilmes, Argentina",
+		    "telefono":"42294950",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2958023,-34.7022041 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Aberastury Lopez",
+		    "coordinador":"Carlos o Paola ",
+		    "email":"caberastury@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Cramer 134, Quilmes, Buenos Aires, Argentina",
+		    "telefono":"1554986440",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2613073,-34.7273258 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"colectivo de apie",
+		    "coordinador":"Mariana Zapata",
+		    "email":"zapmariana@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Aristobulo del Valle 1231, Quilmes, Buenos Aires, Argentina",
+		    "telefono":"1133505460",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.38522,-34.6628165 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Cooperativa de Vivienda Pineyro",
+		    "coordinador":"Claudia",
+		    "email":"mariposasdecolores@live.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Guifra 782, Avellaneda, Buenos Aires, Argentina",
+		    "telefono":"1534555684",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2836646,-34.7186858 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"CPA Leonardo Favio",
+		    "coordinador":"Andrea Barreiro",
+		    "email":"andreabarreiro8@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Chacabuco 600, Quilmes, Buenos Aires, Argentina",
+		    "telefono":"1563651820",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2116603,-34.7632676 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Escuela 503",
+		    "coordinador":"Lautaro",
+		    "email":"lautarorodriguezparra@yahoo.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Calle 19, Berazategui, Argentina",
+		    "telefono":"1551795396",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2371993,-34.7449516 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Ezpeleta",
+		    "coordinador":"Susana In�s Stepanoski ",
+		    "email":"ssusanaines@yahoo.com.ar",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Buenos aires 1206, Ezpeleta, Buenos Aires, Argentina",
+		    "telefono":"1554030983",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.4253727,-34.8112092 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Juana Azurduy",
+		    "coordinador":"Paula Demarco",
+		    "email":"demarco.paula@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Juana Azurduy 1360, Lomas de Zamora, Buenos Aires, Argentina",
+		    "telefono":"1164073293",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2597607,-34.7152627 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Jardin 925 ",
+		    "coordinador":"M�nica Souto",
+		    "email":"mpsoutomonica@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Saavedra, Quilmes, Buenos Aires, Argentina",
+		    "telefono":"1138345127",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.394733855102,-34.7595841102041 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"La Chapanay Lomas",
+		    "coordinador":"Laura",
+		    "email":"orsisur2013@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Belgrano 152, Lomas, Buenos Aires, Argentina",
+		    "telefono":"1563771548",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -57.9537637,-34.9206796 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"La Plata Andrea",
+		    "coordinador":"Andrea Gomez",
+		    "email":"ND",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Calle 45, La Plata, Buenos Aires, Argentina",
+		    "telefono":"155999686",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -57.9537637,-34.9206796 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"la plata soledad",
+		    "coordinador":"Soledad Lopez",
+		    "email":"vaninasoledadlopez@gmail.com ",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Calle 48, La Plata, Buenos Aires, Argentina",
+		    "telefono":"1136091252",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3959288,-34.7004114 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Lanus",
+		    "coordinador":"Mar�a Alejandra Fern�ndez Naveiro",
+		    "email":"fernandeznaveiro@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Alcorta 486, Lanus, Buenos Aires, Argentina",
+		    "telefono":"1536272465",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3731256,-34.7139391 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Lanus este",
+		    "coordinador":"Daniel Mourentan",
+		    "email":"hector.girves@speedy.com.ar",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Eva Peron 3311, Lanus, Buenos Aires, Argentina",
+		    "telefono":"1564301676",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.4117784,-34.7342222 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Lomas Camila",
+		    "coordinador":"Camila Malter",
+		    "email":"camila.maltert@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Mentruyt 513, Lomas de Zamora, Buenos Aires",
+		    "telefono":"1531636463",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.374455,-34.8075709 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Mujeres a la Victoria1",
+		    "coordinador":"Nelly ",
+		    "email":"nellyconcepcioncardozo@gmail.com",
+		    "tipoNodo":"Abierto",
+		    "direccionOSM":"Dardo Rocha 2865, Buenos Aires, Argentina",
+		    "telefono":"1558879777",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3716776,-34.6749465 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Nodo Avellaneda",
+		    "coordinador":"Cynthia Inturias",
+		    "email":"cynthiainturias@yahoo.com.ar",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Arredondo 1487, Avellaneda, Buenos Aires, Argentina",
+		    "telefono":"1560495368",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2240386,-34.7468254 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Nodo Don Bosco",
+		    "coordinador":"victoria riquero",
+		    "email":"victoria_riquero_2@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Uriburu 1373, Quilmes, Buenos Aires, Argentina",
+		    "telefono":"1567100419",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3971303,-34.7341705 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Nodo Kummel ",
+		    "coordinador":"Alejandro Volponi",
+		    "email":"afvolponi@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Av. Hipolito Yrigoyen 6748, Remedios de Escalada, Buenos Aires, Argentina",
+		    "telefono":"1531165432",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3127098,-34.7418262 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Nodo Murmullo teatro",
+		    "coordinador":"Leandro Marcos",
+		    "email":"",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"San Luis 263, Quilmes, Buenos Aires, Argentina",
+		    "telefono":"1168667975",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -57.9827992,-34.8200532 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Nodo punta lara",
+		    "coordinador":"Cecilia",
+		    "email":"cecilia1980@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Calle 3, Punta lara, Buenos Aires, Argentina",
+		    "telefono":"2214888234",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3166787,-34.7165386 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"ONG Hijos del fierro",
+		    "coordinador":"M�nica Otegui ",
+		    "email":"monicaotegui@live.com.ar",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Calle 162, Quilmes, Buenos Aires, Argentina",
+		    "telefono":"42522883",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.4039966,-34.7774457 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Paula Temperley",
+		    "coordinador":"Paula Czajka",
+		    "email":"paulaczajka@laurella.com.ar",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Dorrego 153, Temperley,  Buenos Aires, Argentina",
+		    "telefono":"1567195367",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2712269,-34.7263349 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Quilmes",
+		    "coordinador":"Luc�a In�s Perez",
+		    "email":"aguscori@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Larrea 1458, Quilmes, Buenos Aires, Argentina",
+		    "telefono":"1540669827",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3016672,-34.7424655 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Quilmes",
+		    "coordinador":"Lara Red",
+		    "email":"lara.curutchet@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Islas Malvinas 411, Quilmes, Buenos Aires, Argentina",
+		    "telefono":"1536207269",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3076039,-34.7481535 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Quilmes Laura",
+		    "coordinador":"Laura Alessandri",
+		    "email":"mlalessandri@yahoo.com.ar",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Entre Rios 1001, Quilmes,  Buenos Aires, Argentina",
+		    "telefono":"1161613438",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2968393,-34.7416382 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Quilmes gissele",
+		    "coordinador":"GISELLE GERATTANO",
+		    "email":"ggerattano@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Carlos Pellegrini 272, Quilmes, Buenos Aires, Argentina",
+		    "telefono":"1123383531",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2840694,-34.7373362 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Quilmes Miriam",
+		    "coordinador":"Miriam Lorena Cazeneuve",
+		    "email":"nisty08@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Estanislao del campo 1140, Quilmes,  Buenos Aires, Argentina",
+		    "telefono":"1535909547",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2559397,-34.7309186 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Quilmes oeste",
+		    "coordinador":"Hugo Bravo",
+		    "email":"hugobravo.atahona@gmail.com ",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Amoedo 4465, Quilmes,  Buenos Aires, Argentina",
+		    "telefono":"1564232862",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2116603,-34.7632676 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Ranelagh Ary",
+		    "coordinador":"Ary Pablo Batista",
+		    "email":"arypbatista@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Calle 305, Berazategui,  Buenos Aires, Argentina",
+		    "telefono":"1130133328",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2640518,-34.7090873 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Raquel y Eva ",
+		    "coordinador":"Raquel y Eva",
+		    "email":"marta19692003@yahoo.com.ar",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Uspallata 126, Quilmes, Buenos Aires, Argentina",
+		    "telefono":"1155147831",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3901451,-34.7317117 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Remedios de Escalada",
+		    "coordinador":"Victoria V�liz",
+		    "email":"nair.vicky@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"29 de septiembre 3007, Remedios de Escalada,  Buenos Aires, Argentina",
+		    "telefono":"ND",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3125058,-34.7866452 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Solano",
+		    "coordinador":"Estefan�a Celeste Mu�oz",
+		    "email":"estefaniaceleste@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Calle 852, Solano,  Buenos Aires, Argentina",
+		    "telefono":"1131242681",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.4189388,-34.7839132 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Turdera ",
+		    "coordinador":"Adriana Ines Gomez",
+		    "email":"adriana_ines_gomez@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"San Blas 399, Lomas De Zamora,  Buenos Aires, Argentina",
+		    "telefono":"1557091587",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2657424,-34.724805 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"UNQUI",
+		    "coordinador":"Blanca Peletay",
+		    "email":"mercadosolidario@unq.edu.ar",
+		    "tipoNodo":"Abierto",
+		    "direccionOSM":"Roque Saenz pena 342, Quilmes,  Buenos Aires, Argentina",
+		    "telefono":"",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2852968,-34.8121197 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Varela ",
+		    "coordinador":"Walter ",
+		    "email":"",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Cabello 135, Florencio Varela,  Buenos Aires, Argentina",
+		    "telefono":"1133801800",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3334366,-34.7089198 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Wilde Granja",
+		    "coordinador":"Julieta Alvarellos",
+		    "email":"julietaalvarellos@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Corvalan 1246, Wilde, Buenos Aires, Argentina",
+		    "telefono":"1563777602",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2836239,-34.75184 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Quilmes teresita",
+		    "coordinador":"Mar�a Teresita Musero ",
+		    "email":"merymusero@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Elustondo 265, Quilmes,  Buenos Aires, Argentina",
+		    "telefono":"1167650841",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3213608632653,-34.697040322449 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Wilde cecilia",
+		    "coordinador":"Cecilia Manj�n",
+		    "email":"cemanjon.yoga@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Lobos 221, Wilde,  Buenos Aires, Argentina",
+		    "telefono":"1538763874",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2894182,-34.7798539 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Florencio Varela",
+		    "coordinador":"Noem� Marta Elias",
+		    "email":"noemimartaelias@yahoo.com.ar",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Larrea 143, Florencio Varela,  Buenos Aires, Argentina",
+		    "telefono":"1553289889",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -57.9537637,-34.9206796 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Andrea Roumieu",
+		    "coordinador":"Andrea Roumieu",
+		    "email":"anroumieu@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Calle 3, La Plata,  Buenos Aires, Argentina",
+		    "telefono":"111559224649",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.4020374,-34.7573681 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Facultad de Cs.Agrarias ",
+		    "coordinador":"Florencia Catriel ",
+		    "email":"catrielbenavidez@gmail.com  ",
+		    "tipoNodo":"Abierto",
+		    "direccionOSM":"KM2, Lomas De Zamora, Buenos Aires, Argentina",
+		    "telefono":"ND",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3630043,-34.6742024 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Nodo Gerli ",
+		    "coordinador":"Puchi ",
+		    "email":"carlos_a_garo@yahoo.com.ar ",
+		    "tipoNodo":"Abierto",
+		    "direccionOSM":"Av. General Guemes 1850, Buenos Aires, Argentina",
+		    "telefono":"ND",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2783807108107,-34.70624975 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"UNQ",
+		    "coordinador":"UNQ",
+		    "email":"mercadosolidario@unq.edu.ar ",
+		    "tipoNodo":"Abierto",
+		    "direccionOSM":"Roque Saenz pena 352, Quilmes,  Buenos Aires, Argentina",
+		    "telefono":"ND",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -57.9537637,-34.9206796 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Sentimiento Nacional",
+		    "coordinador":"Catalina ",
+		    "email":"catalinacaminos@gmail.com ",
+		    "tipoNodo":"Abierto",
+		    "direccionOSM":"Calle 37, La Plata, Buenos Aires, Argentina",
+		    "telefono":"ND",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3081983387755,-34.6915780265306 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Paramaribo",
+		    "coordinador":"Marian Pacha/ Recibe Andr�s",
+		    "email":"madreselvatika@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Paramaribo 5922, Wilde, Buenos Aires, Argentina",
+		    "telefono":"1133033143",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.2116603,-34.7632676 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Nodo Ranelagh",
+		    "coordinador":"Cilda Ramonino",
+		    "email":"cildaramonino@yahoo.com.ar",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Calle 304, Berazategui, Buenos Aires, Argentina",
+		    "telefono":"1156617887",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3959288,-34.7004114 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Lanus Oeste",
+		    "coordinador":"Alejandra Fernandez",
+		    "email":"fernandeznaveiro@hotmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Alcorta 486, Lanus, Buenos Aires, Argentina",
+		    "telefono":"1536272465",
+		    "presicion":"buena"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -57.9537637,-34.9206796 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"La plata Rosalina",
+		    "coordinador":"Rosalina/ Mara Dalponte",
+		    "email":"rnazarre@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Calle 45, La Plata, Buenos Aires, Argentina",
+		    "telefono":"2215221793",
+		    "presicion":"mala"
+		    }
+		  },
+		  {
+		    "type": "Feature",
+		    "geometry": {
+		       "type": "Point",
+		       "coordinates":  [ -58.3731256,-34.7139391 ]
+		    },
+		    "properties": {
+		    "nombreNodo":"Lanus Gabriel",
+		    "coordinador":"Gabriel",
+		    "email":"daniel.mourentan@gmail.com",
+		    "tipoNodo":"Cerrado",
+		    "direccionOSM":"Eva Peron 3311, Lanus, Buenos Aires, Argentina",
+		    "telefono":"1161858502",
+		    "presicion":"mala"
+		    }
+		  }
 	]
 	}
-                ];
+ ];
