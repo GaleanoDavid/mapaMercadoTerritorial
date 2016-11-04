@@ -37,7 +37,7 @@ function insertPoint(query,marker,mapa){
 
 //inserta un punto en el mapa dado, en el grupo dado "marker"
 function insertPointWithGMaps(calle, altura, partido, provincia, pais,marker,mapa){
-	encodedQuery=calle +'+'+ altura + '+' + partido + '+' + pais;
+	encodedQuery=calle +'+' + altura + '+' + partido + '+' + pais;
 	aQuery = new HttpClient();
 	aQuery.get('https://maps.googleapis.com/maps/api/geocode/json?address='+encodedQuery+'+&key=AIzaSyD_8mUpLuoMmB6qSW_kI3vQXY7jpvbfnB4', function(response) {
 	    console.log(response);
