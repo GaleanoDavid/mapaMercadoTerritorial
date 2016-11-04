@@ -35,6 +35,23 @@ function insertPoint(query,marker,mapa){
 	});
 }
 
+//inserta un punto en el mapa dado, en el grupo dado "marker"
+function insertPointWithGMaps(calle, altura, partido, provincia, pais,marker,mapa){
+	encodedQuery=calle +'+'+ altura + '+' + partido + '+' + pais;
+	aQuery = new HttpClient();
+	aQuery.get('https://maps.googleapis.com/maps/api/geocode/json?address='+encodedQuery+'+&key=AIzaSyD_8mUpLuoMmB6qSW_kI3vQXY7jpvbfnB4', function(response) {
+	    console.log(response);
+	    var json= JSON.parse(response).results[0].geometry.location;
+	    GeoJSON.parse(json, {Point: ['lat', 'lng']}, function(geojson){	    	
+	    	  console.log(JSON.stringify(geojson));
+	    	  marker.addLayer(importGeoJsonFilter(geojson));
+	    	  mapa.addLayer(marker);
+	    	  //opcional
+	    	  mapa.fitBounds(marker.getBounds());
+	    	});
+	});
+}
+
 function individualQuery(query){
 	encodedQuery=encodeURI(query)
 	aQuery = new HttpClient();
@@ -42,6 +59,21 @@ function individualQuery(query){
 	    console.log(response);
 	    var json= JSON.parse(response).elements;
 	    GeoJSON.parse(json, {Point: ['lat', 'lon']}, function(geojson){	    	
+	    	  console.log(JSON.stringify(geojson));
+	    	});
+	});
+}
+
+//variables son strings
+function individualQueryForGMapsAPI(calle, altura, partido, provincia, pais){
+	encodedQuery=calle +'+'+ altura + '+' + partido + '+' + pais;
+	aQuery = new HttpClient();
+	aAlgo = encodedQuery;
+	console.log(aAlgo);
+	 aQuery.get('https://maps.googleapis.com/maps/api/geocode/json?address='+encodedQuery+'+&key=AIzaSyD_8mUpLuoMmB6qSW_kI3vQXY7jpvbfnB4', function(response) {
+	    console.log(response);
+	    var json= JSON.parse(response).results[0].geometry.location;
+	    GeoJSON.parse(json, {Point: ['lat', 'lng']}, function(geojson){	    	
 	    	  console.log(JSON.stringify(geojson));
 	    	});
 	});
